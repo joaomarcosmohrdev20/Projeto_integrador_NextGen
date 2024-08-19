@@ -17,3 +17,7 @@ Características como usuário;
 
 	Para fazer o cadastro, preciso apenas do e-mail, criar uma senha e nome verdadeiro;
 	Para entrar no site, preciso apenas do e-mail e a senha criada para a conta;
+
+	Compras: 
+
+	Para fazer uma compra na Next Gen preciso apenas estar cadastrado no site, ter cartão de crédito válido e ser maior de 13 anos de idade;
