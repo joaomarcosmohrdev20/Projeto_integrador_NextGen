@@ -31,4 +31,6 @@ Requisitos não funcionais:
   
 Regras de negócios: 
 
-1- Ser 
+1- Disponibilizar catálogo dos produtos disponíveis:
+
+ 	Essa será a forma como será exibidos os produtos para o cliente da Next Gen.
