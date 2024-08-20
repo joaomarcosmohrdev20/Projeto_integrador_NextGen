@@ -17,4 +17,10 @@ Requisitos funcionais:
 	b- Botão para pedir ajuda ao suporte do site, esse botão abre um chat onde o usuário pode pedir ajuda ou fazer perguntas sobre o sistema;
    	c- Área de exibição dos jogos do catálogo com botões em formato de imagem do produto, esse botão abre uma tela onde mostra informações sobre o produto, como: avaliações, preço, formas de pagamento e descrição detalhada do produto;
 	d- Botão barra de rolamento, que permite ao usuário clicar e segurando e movendo para baixo ou para cima, ver mais games disponíveis no site; 
-       
+
+Requisitos não funcionais: 
+
+* Ser rápido;
+* Ser agradável;
+* ser seguro;
+  
