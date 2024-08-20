@@ -29,8 +29,4 @@ Requisitos não funcionais:
 * Ser agradável;
 * ser seguro;
   
-Regras de negócios: 
 
-1- Disponibilizar catálogo dos produtos disponíveis:
-
- 	Essa será a forma como será exibidos os produtos para o cliente da Next Gen.
