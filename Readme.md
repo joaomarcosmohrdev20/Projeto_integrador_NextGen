@@ -8,7 +8,7 @@ Requisitos funcionais:
 
 1- Tela que pergunta se usuário tem ou não conta no site:
  
-	a- Botão que Sabre uma nova tela onde pode se fazer o cadastro no sistema;
+	a- Botão que abre uma nova tela onde pode se fazer o cadastro no sistema;
    	b- Botão de que abre uma nova tela que permite o usuário (se for cadastrado) de fazer login colocando seu e-mail ou nome do perfil e a senha;
 
 2- Tela inicial do site Next Gen: 
