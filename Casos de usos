@@ -60,8 +60,9 @@ Fluxo Principal:
 3- O usuário clica em "Comprar";
 4- A regra de negócios "Ver carrinho de compras" é válidado;
 5- Usuário clica em "Prosseguir"; 
-6- Sistema abre uma tela onde mostra as opções de pagamento;
+6- Sistema abre uma tela onde mostra as opções de pagamento (cartão de crédito, PIX e boleto);
 7- O usuário seleciona a opção de pagamento que deseja;
+8- Aparece em baixo das opções de pagamentos os campos que se deve preencher sobre aquela forma de pagamento
 
 
 
