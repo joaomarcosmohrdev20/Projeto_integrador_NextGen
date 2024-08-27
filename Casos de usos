@@ -62,7 +62,14 @@ Fluxo Principal:
 5- Usuário clica em "Prosseguir"; 
 6- Sistema abre uma tela onde mostra as opções de pagamento (cartão de crédito, PIX e boleto);
 7- O usuário seleciona a opção de pagamento que deseja;
-8- Aparece em baixo das opções de pagamentos os campos que se deve preencher sobre aquela forma de pagamento
+8- Aparece em baixo das opções de pagamentos os campos que se deve preencher sobre aquela forma de pagamento;
+9- Usuário clica em "Confrirmar compra"; 
+10= Compra do cliente é válidada e confirmada no sistema;
+
+Pós condições: 
+
+1- Usuário consegue comprar seu produto na hora em que confirmou a compra;
+2- Se a forma de pagamento for em boleto, então será feito um download do boleto da compra que acabou de ser feita pelo usuário; 
 
 
 
