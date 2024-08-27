@@ -18,13 +18,13 @@ Fluxo Principal:
 2- Usuário clica no botão “cadastrar-se”;
 3- Usuário vai inserir seus dados válidos nos campos específicos (e-mail, senha, nome real, nome de usuário, idade); 
 4- Usuário clica no botão “Criar conta”;
-5- O sistema inicia a regra de negócios “Regra de verificação de contas na Next Gen”;
+5- A regra de negócios “Regra de verificação de contas na Next Gen” é válidada;
 6- O usuário consegue criar uma conta nova na Next Gen;
 
 Pós condições: 
 
 1- Usuário acessa a tela principal do site;
-2- O sistema inicia a regra de negócios “Ver catálogo de games da Next Gen”;
+2- A regra de negócios “Ver catálogo de games da Next Gen” é válidada;
 
 
 2- Fazer login
@@ -44,6 +44,25 @@ Pós condições:
 
 1- O usuário ganha acesso à tela peincipal do site;
 2- A regra de negócios "Ver catálogo de games da Next Gen" é válidada;
+
+3- Comprar produtos
+
+Pré-xondições: 
+
+1- Estar logado no sistema;
+2- Estar conectado à internet;
+3- Estar na tela principal e no catálogo de jogos;
+
+Fluxo Principal:
+
+1- Usuário seleciona um jogo para comprar;
+2- O sistema abre uma janela de detalhes do produto;
+3- O usuário clica em "Comprar";
+4- A regra de negócios "Ver carrinho de compras" é válidado;
+5- Usuário clica em "Prosseguir"; 
+6- Sistema abre uma tela onde mostra as opções de pagamento;
+7- O usuário seleciona a opção de pagamento que deseja;
+
 
 
 
