@@ -72,6 +72,6 @@ Pós condições:
 2- Se a forma de pagamento for em boleto, então será feito um download do boleto da compra que acabou de ser feita pelo usuário; 
 3- Se a forma de pagamento for cartão de crédito, será descontado o valor do(s) game(s) da conta bancária do jogador;
 4- Se a forma de pagamento for PIX, será descontado o valor do(s) game(s) da conta bancária do jogador;
-
+5- A regra de negócios "Ver catálogo de games da Next Gen" é válidada;
 
 
