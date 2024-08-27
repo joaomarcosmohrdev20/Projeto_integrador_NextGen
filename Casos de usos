@@ -1,0 +1,49 @@
+Next Gen
+
+Casos de usos
+
+1- Cadastro de usuário
+
+Personagem principal: usuário
+
+Pré-condições: 
+
+Estar conectado à internet;
+Estar com a tela de título do site aberta;
+Ter dados válidos (e-mail, senha e idade);
+
+Fluxo Principal: 
+
+1- Usuário acessa o site;
+2- Usuário clica no botão “cadastrar-se”;
+3- Usuário vai inserir seus dados válidos nos campos específicos (e-mail, senha, nome real, nome de usuário, idade); 
+4- Usuário clica no botão “Criar conta”;
+5- O sistema inicia a regra de negócios “Regra de verificação de contas na Next Gen”;
+6- O usuário consegue criar uma conta nova na Next Gen;
+
+Pós condições: 
+
+1- Usuário acessa a tela principal do site;
+2- O sistema inicia a regra de negócios “Ver catálogo de games da Next Gen”;
+
+
+2- Fazer login
+
+Pré=condições: 
+
+1- Ter uma conta válida na Next Gen;
+2- Estar conectado à internet;
+3- Ter preenchido os campos corretamente;
+
+Fluxo Principal: 
+
+1- O usuário preenche os campos corretamente (e-mail e senha);
+2- A regra de negócio "Regra de fazer login" é válidada;
+
+Pós condições: 
+
+1- O usuário ganha acesso à tela peincipal do site;
+2- A regra de negócios "Ver catálogo de games da Next Gen" é válidada;
+
+
+
