@@ -70,7 +70,8 @@ Pós condições:
 
 1- Usuário consegue comprar seu produto na hora em que confirmou a compra;
 2- Se a forma de pagamento for em boleto, então será feito um download do boleto da compra que acabou de ser feita pelo usuário; 
-
+3- Se a forma de pagamento for cartão de crédito, será descontado o valor do(s) game(s) da conta bancária do jogador;
+4- Se a forma de pagamento for PIX, será descontado o valor do(s) game(s) da conta bancária do jogador;
 
 
 
