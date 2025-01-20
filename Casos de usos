@@ -40,7 +40,7 @@ Fluxo principal:
 1- O usuário preenche os campos corretamente (e-mail e senha);
 2- A regra de negócio "Regra de fazer login" é válidada;
 
-Pós condições: 
+Pós-condições: 
 
 1- O usuário ganha acesso à tela peincipal do site;
 2- A regra de negócios "Ver catálogo de games da Next Gen" é válidada;
