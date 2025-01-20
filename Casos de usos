@@ -21,7 +21,7 @@ Fluxo principal:
 5- A regra de negócios “Regra de verificação de contas na Next Gen” é válidada;
 6- O usuário consegue criar uma conta nova na Next Gen;
 
-Pós condições: 
+Pós-condições: 
 
 1- Usuário acessa a tela principal do site;
 2- A regra de negócios “Ver catálogo de games da Next Gen” é válidada;
