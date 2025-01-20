@@ -64,7 +64,7 @@ Fluxo principal:
 7- O usuário seleciona a opção de pagamento que deseja;
 8- Aparece em baixo das opções de pagamentos os campos que se deve preencher sobre aquela forma de pagamento;
 9- Usuário clica em "Confrirmar compra"; 
-10= Compra do cliente é válidada e confirmada no sistema;
+10- Compra do cliente é válidada e confirmada no sistema;
 
 Pós-condições: 
 
