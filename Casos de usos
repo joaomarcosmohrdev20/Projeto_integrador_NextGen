@@ -1,77 +1,11 @@
 Next Gen
 
-Casos de usos
+Sobre este projeto:
 
-1- Cadastro de usuário
+Este projeto é uma plataforma digital e online que permite a compra, venda, instalação e utilizar jogos eletrônicos de computadores chamada de "Next Gen".
 
-Personagem principal: usuário
+Requisitos funcionais:
 
-Pré-condições: 
-
-Estar conectado à internet;
-Estar com a tela de título do site aberta;
-Ter dados válidos (e-mail, senha e idade);
-
-Fluxo principal: 
-
-1- Usuário acessa o site;
-2- Usuário clica no botão “cadastrar-se”;
-3- Usuário vai inserir seus dados válidos nos campos específicos (e-mail, senha, nome real, nome de usuário, idade); 
-4- Usuário clica no botão “Criar conta”;
-5- A regra de negócios “Regra de verificação de contas na Next Gen” é válidada;
-6- O usuário consegue criar uma conta nova na Next Gen;
-
-Pós-condições: 
-
-1- Usuário acessa a tela principal do site;
-2- A regra de negócios “Ver catálogo de games da Next Gen” é válidada;
-
-
-2- Fazer login
-
-Pré-condições: 
-
-1- Ter uma conta válida na Next Gen;
-2- Estar conectado à internet;
-3- Ter preenchido os campos corretamente;
-
-Fluxo principal: 
-
-1- O usuário preenche os campos corretamente (e-mail e senha);
-2- A regra de negócio "Regra de fazer login" é válidada;
-
-Pós-condições: 
-
-1- O usuário ganha acesso à tela peincipal do site;
-2- A regra de negócios "Ver catálogo de games da Next Gen" é válidada;
-
-3- Comprar produtos
-
-Pré-condições: 
-
-1- Estar logado no sistema;
-2- Estar conectado à internet;
-3- Estar na tela principal e no catálogo de jogos;
-
-Fluxo principal:
-
-1- Usuário seleciona um jogo para comprar;
-2- O sistema abre uma janela de detalhes do produto;
-3- O usuário clica em "Comprar";
-4- A regra de negócios "Ver carrinho de compras" é válidado;
-5- Usuário clica em "Prosseguir"; 
-6- Sistema abre uma tela onde mostra as opções de pagamento (cartão de crédito, PIX e boleto);
-7- O usuário seleciona a opção de pagamento que deseja;
-8- Aparece em baixo das opções de pagamentos os campos que se deve preencher sobre aquela forma de pagamento;
-9- Usuário clica em "Confrirmar compra"; 
-10- Compra do cliente é válidada e confirmada no sistema;
-
-Pós-condições: 
-
-1- Usuário consegue comprar seu produto na hora em que confirmou a compra;
-2- Se a forma de pagamento for em boleto, então será feito um download do boleto da compra que acabou de ser feita pelo usuário; 
-3- Se a forma de pagamento for cartão de crédito, será descontado o valor do(s) game(s) da conta bancária do jogador;
-4- Se a forma de pagamento for PIX, será descontado o valor do(s) game(s) da conta bancária do jogador;
-5- A regra de negócios "Ver catálogo de games da Next Gen" é válidada;
-
-
+- Função de cadastrar um novo cliente;
+- Função do usuário fazer login (caso este tenha uma conta ativa no site);
+- Função do usuário pesquisar por jogos, desenvolvedoras, publicadoras ou usuários que estejam nos registros da Next Gen;
