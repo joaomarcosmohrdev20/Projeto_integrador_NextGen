@@ -7,10 +7,15 @@ Este projeto é uma plataforma digital e online que permite a compra, venda, ins
 Requisitos funcionais:
 
 - Função de cadastrar um novo cliente;
+
 - Função do usuário fazer login (caso este tenha uma conta ativa no site);
+
 - Função do usuário pesquisar por jogos, desenvolvedoras, publicadoras ou usuários que estejam nos registros da Next Gen;
+
 - Função do usuário comprar um jogo que seja de seu interesse e que esteja no acervo da Next Gen;
+
 - Função de "Medalhas". Quando o usuário bater determinada meta ou objetivo em algum jogo adquirido através da plataforma Next Gen, ele ganhará uma medalha com a raridade compatível com a meta ou objetivo alcançado;
+
 - Função do usuário explorar o catálogo de jogos rolando a tela para baixo atráves do scroll do mouse;
 
 Função de Cadastrar um novo cliente:
@@ -20,19 +25,41 @@ Função de Cadastrar um novo cliente:
   Ator principal: Usuário;
 
   Pré-condições: 
+    - Ter acesso estável à internet;
     - Ter e-mail válido e idade superior à 13 anos de idade;
     - Inserir seu nome verdadeiro;
     - Criar um  nome de usuário único;
     - Criar uma senha de segurança para a conta Next Gen;
 
-  Fluxo Principal: 
-
+  Fluxo principal: 
     - O usuário isere seu nome próprio, seu e-mail (válido), cria um nome de usuário único e uma senha de segurança;
     - O usuário confirma a operação clicando no botão "Criar conta";
 
   Pós-condições:
     - O sistema atualiza a lista de contas ativas no site;
     - O site abre o menu principal da plataforma com a conta conectada;
+
+/-/
+
+Função de login de usuário:
+
+  Resumo: Permite o usuário fazer login no site da Next Gen;
+
+  Ator principal: Usuário;
+
+  Pré=condições:
+    -Ter acesso estável à internet;
+    -Ter conta Next Gen ativa;
+
+  Fluxo principal: 
+    -O usuário preenche os campos de e-mail e senha com os dados (corretos e válidos) da conta Next Gen (ativa);
+    -Estando corretos e válidos o e-mail e senha da conta (ativa) o sistema permite acesso à conta Next Gen e à plataforma Next Gen;
+
+/-/
+
+Função de pesquisar games, desenvolvedoras
+
+  
 
 
     
