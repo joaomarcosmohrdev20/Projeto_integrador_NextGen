@@ -1,7 +1,3 @@
-import { StaffService } from "./service/StaffService";
-import { StaffView } from "./View/StaffView";
+import { InitialMenu } from "./service/InitialMenuService";
 
-const staffView = new StaffView;
-const staffService = new StaffService;
-
-staffView.controlMenu();
+const initialMenu = new InitialMenu

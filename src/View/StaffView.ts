@@ -18,7 +18,7 @@ export class StaffView {
 
             case "0":
                 this.controlMenu();
-                break
+                break;
 
             case "1":
             //To list customers OPÇÃO 1

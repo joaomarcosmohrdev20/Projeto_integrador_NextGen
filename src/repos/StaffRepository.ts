@@ -25,7 +25,7 @@ export class StaffRepository {
         return listOfUsers;
     }   
 
-    public async searchCustomersForID(user_id) {
+    public async searchCustomersForID(user_id : number) {
         let query = "SELECT * FROM Schema1.users WHERE user_id = $1";
         let result = await this.pool.query(query,[user_id]);
 
@@ -45,7 +45,7 @@ export class StaffRepository {
         await this.pool.query(query,[user_realname, user_nickname, user_email, user_password]);     
     }
 
-    public async deleteCustomers(user_id) {
+    public async deleteCustomers(user_id: number) {
         let query = "Delete from Schema1.users where user_id = $1"
         await this.pool.query(query,[user_id]);
     }
