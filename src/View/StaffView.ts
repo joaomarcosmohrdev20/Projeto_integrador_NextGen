@@ -1,60 +1,67 @@
 import { StaffService } from "../service/StaffService";
+import { InitialMenuView } from "./InitialMenuView";
 import promptSync  from 'prompt-sync' 
 
 export class StaffView { 
     private staffService : StaffService;
-    private prompt : promptSync 
+    private prompt : promptSync
+    private initialView : InitialMenuView;
 
     constructor() {
         this.prompt = promptSync();
         this.staffService = new StaffService();
+        this.initialView = new InitialMenuView();
     }
 
-    async controlMenu() {
-        console.log("Bem-vindo à Next Gen!")
-        let choiceStaff = this.prompt("Digite 1 para listar todos os clientes atuais, digite 2 para buscar qualquer cliente pelo ID do cliente, digite 3 para cadastrar novos clientes no banco de dados, digite 4 para deletar clientes do banco de dados  ");
+    async staffMenu() {
+        console.log("   ");
+        console.log("   ");
+        console.log("   ");
+
+        let choiceStaff = this.prompt("Insert 0 to exit to initial menu, insert 1 to list all current customers, insert 2 to search any customer for ID, insert 3 to register a new customer in the database, insert 4 to delete a customer of the database:  ");
 
         switch (choiceStaff) {
 
             case "0":
-                this.controlMenu();
+                this.initialView.initialMenu();
                 break;
 
             case "1":
             //To list customers OPÇÃO 1
                 console.table(await this.staffService.toListCustomer());
-                await this.controlMenu();
+                await this.staffMenu();
                 break;
             case "2": 
             //To Search for ID customers OPÇÃO 2
-                let idCustomer = this.prompt("Qual o ID do cliente?  ");
+                let idCustomer = this.prompt("What is the customer's ID?  ");
                 console.table(await this.staffService.toSearchCustomerForID(idCustomer));
+                await this.staffMenu();
                 break;
 
             case "3":
             //To insert customers OPÇÃO 3
-                let insertRealNameCustomer = this.prompt("Qual o nome real do cliente?  ");
-                let insertNickNameCustomer = this.prompt("Qual o apelido do cliente?  ");
-                let insertEmailCustomer = this.prompt("Qual o e-mail do cliente?  ");
-                let insertPasswordCustomer = this.prompt("Qual a senha da conta do cliente?  ");
+                let insertRealNameCustomer = this.prompt("What is the customer's real name?  ");
+                let insertNickNameCustomer = this.prompt("What is the customer's nick name?  ");
+                let insertEmailCustomer = this.prompt("What is the customer's e-mail address?  ");
+                let insertPasswordCustomer = this.prompt("What if the customer's account password?  ");
                 this.staffService.toValidateEmail(insertEmailCustomer);
                 await this.staffService.toInsertCustomers(insertRealNameCustomer, insertNickNameCustomer, insertEmailCustomer, insertPasswordCustomer);  
                 console.table(await this.staffService.toListCustomer());
-                await this.controlMenu();  
+                await this.staffMenu();  
                 break;
 
             case "4":
             //To Delete customers OPÇÃO 4
                 console.table(await this.staffService.toListCustomer());
-                let deletIDCustomer = this.prompt("Digite o ID do cliente que deseja deletar do banco de dados:  ");
+                let deletIDCustomer = this.prompt("Insert the ID of the customer who you want to delete:  ");
                 await this.staffService.toDeleteCustomers(deletIDCustomer);
                 console.table(await this.staffService.toListCustomer());
-                await this.controlMenu();
+                await this.staffMenu();
                 break;
             
             default:
-                console.log("Tecla inválida.");
-                await this.controlMenu();
+                console.log("Invalidate key.");
+                await this.staffMenu();
                 break;
         }
     }

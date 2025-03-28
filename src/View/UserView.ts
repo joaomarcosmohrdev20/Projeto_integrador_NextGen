@@ -11,15 +11,27 @@ export class UserView {
         this.prompt = promptSync();
     }
 
-    async loginCustomerView() {
-        console.log("Bem-vindo à Next Gen!")
-        let nicknameCustomer = this.prompt("Qual o seu nome de usuário?  ");
-        let emailCustomer = this.prompt("Qual o seu e-mail?  ");
-        let passwordCustomer = this.prompt("Qual a sua senha?  ");
+    async userMenu() {
+    console.log("   ");
+    console.log("   ");
+    console.log("   ");
+
+    let choiceUser = this.prompt("Insert 1 to login, insert 2 to create a Next Gen account:  ")
+
+    switch (choiceUser) {
+    
+        case "1":
+        let nicknameCustomer = this.prompt("What is your nickname?  ");
+        let emailCustomer = this.prompt("What is your e-mail address?  ");
+        let passwordCustomer = this.prompt("What is your password?  ");
 
         await this.userService.toLoginCustomer(nicknameCustomer, emailCustomer, passwordCustomer);
+        break;
 
-        
+        default:
+        console.log("Invalidate key.  ");
+        break;
     }
+}
 
 }

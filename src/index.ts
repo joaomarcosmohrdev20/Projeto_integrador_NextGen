@@ -1,3 +1,5 @@
-import { InitialMenu } from "./service/InitialMenuService";
+import { InitialMenuView } from "./View/InitialMenuView";
 
-const initialMenu = new InitialMenu
+let initial = new InitialMenuView();
+
+initial.initialMenu();
